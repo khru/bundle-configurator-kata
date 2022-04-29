@@ -14,4 +14,11 @@ final class BundleConfiguratorTest extends TestCase
 
         self::assertSame('P1', $bundleConfigurator->select('P1'));
     }
+
+    public function test_selected_a_different_item(): void
+    {
+        $bundleConfigurator = new BundleConfigurator();
+
+        self::assertSame('P2', $bundleConfigurator->select('P2'));
+    }
 }
