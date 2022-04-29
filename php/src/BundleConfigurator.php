@@ -25,6 +25,10 @@ final class BundleConfigurator
             return 'B1';
         }
 
+        if (in_array('P3', $products, true) && in_array('P4', $products, true)) {
+            return 'B3';
+        }
+
         return 'B2';
     }
 }
