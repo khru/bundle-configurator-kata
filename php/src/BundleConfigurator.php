@@ -21,9 +21,18 @@ final class BundleConfigurator
             'B5' => ['P1', 'P5'],
         ];
 
+        $baseBundle = array_search($products, $bundleProducts, true);
+
+        if ($baseBundle) {
+            return (string) $baseBundle;
+        }
+
         $bundles = [];
+        foreach ($products as $product) {
+            
+        }
         // Todo: We need to create a state machine
 
-        return (string) array_search($products, $bundleProducts, true);
+        return (string) $baseBundle;
     }
 }
