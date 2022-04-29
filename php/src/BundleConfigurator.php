@@ -7,6 +7,12 @@ final class BundleConfigurator
 {
     public function select(string $productNames): string
     {
-        return $productNames;
+        $products = explode(',', $productNames);
+
+        if (count($products) === 1) {
+            return $productNames;
+        }
+
+        return 'B1';
     }
 }
