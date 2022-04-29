@@ -21,6 +21,9 @@ final class BundleConfigurator
             'B5' => ['P1', 'P5'],
         ];
 
-        return array_search($products, $bundleProducts, true);
+        $bundles = [];
+        // Todo: We need to create a state machine
+
+        return (string) array_search($products, $bundleProducts, true);
     }
 }
