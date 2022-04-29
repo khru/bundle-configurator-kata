@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 final class BundleConfiguratorTest extends TestCase
 {
-    public function test_change_me(): void
+    public function test_selected_one_item(): void
     {
         $bundleConfigurator = new BundleConfigurator();
 
